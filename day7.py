@@ -1,5 +1,3 @@
-from functools import reduce
-
 rulesRaw = [x for x in open("./input/day7-test.txt").read().split(".\n")]
 
 print(rulesRaw)
