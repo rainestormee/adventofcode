@@ -41,7 +41,6 @@ for x in rulesRaw:
     baggage = {}
     for i in range(len(inside)):
         baggage[inside[i]] = amount[i]
-
     bags[container] = baggage
 counter = 0
 correct = []
