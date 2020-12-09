@@ -1,6 +1,6 @@
 from functools import reduce
 
-inputa = [[j for j in i[:-1]] for i in open("./input/day3.txt")]
+inputa = [[j for j in i[:-1]] for i in open("input/day03.txt")]
 
 def part_one():
     return get_trees((1, 3))

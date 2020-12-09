@@ -1,4 +1,4 @@
-inputa = [a for a in open("./input/day5.txt").read().split("\n")[:-1]]
+inputa = [a for a in open("input/day05.txt").read().split("\n")[:-1]]
 
 highest = 0
 seats = []

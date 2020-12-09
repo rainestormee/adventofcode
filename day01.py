@@ -1,4 +1,4 @@
-numbers = [int(line) for line in open("./input/day1.txt")]
+numbers = [int(line) for line in open("input/day01.txt")]
 
 def part_one():
     for i in range(len(numbers)):

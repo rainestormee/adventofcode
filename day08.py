@@ -1,4 +1,4 @@
-rulesRaw = [x.split(" ") for x in open("./input/day8.txt").read().split("\n")]
+rulesRaw = [x.split(" ") for x in open("input/day08.txt").read().split("\n")]
 
 def part_one():
     return step_through_instructions(rulesRaw, [True] * len(rulesRaw))[1]

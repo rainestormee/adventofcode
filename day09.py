@@ -1,4 +1,4 @@
-inputList = [int(x) for x in open("./input/day9.txt").read().split("\n")]
+inputList = [int(x) for x in open("input/day09.txt").read().split("\n")]
 
 preambleLength = 25
 data = [inputList[x] for x in range(preambleLength + 1, len(inputList))]

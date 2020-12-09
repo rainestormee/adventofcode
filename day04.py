@@ -1,5 +1,5 @@
 import re
-inputa = [[j.split(":") for j in re.split("[\\n ]", i)] for i in open("./input/day4.txt").read().split("\n\n")]
+inputa = [[j.split(":") for j in re.split("[\\n ]", i)] for i in open("input/day04.txt").read().split("\n\n")]
 
 count = 0
 validCount = 0

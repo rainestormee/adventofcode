@@ -1,4 +1,4 @@
-lines, letter, password, least, most = [i[:-1] for i in open("./input/day2.txt")], [], [], [], []
+lines, letter, password, least, most = [i[:-1] for i in open("input/day02.txt")], [], [], [], []
 
 # Parsing the input file into variables
 for i in lines:

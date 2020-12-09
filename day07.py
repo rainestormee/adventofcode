@@ -1,4 +1,4 @@
-rulesRaw = [x for x in open("./input/day7-test.txt").read().split(".\n")]
+rulesRaw = [x for x in open("input/day07-test.txt").read().split(".\n")]
 
 print(rulesRaw)
 
