@@ -1,47 +1,33 @@
-import sys
-
 inputList = [int(x) for x in open("./input/day9.txt").read().split("\n")]
 
 preambleLength = 25
-preamble = []
 data = [inputList[x] for x in range(preambleLength + 1, len(inputList))]
+preamble = [inputList[x] for x in range(0, preambleLength + 1)]
 
-def refresh_pre(start):
-    global preamble
-    preamble = [inputList[x] for x in range(start, start + preambleLength + 1)]
+def part_one():
+    for x in range(len(data)):
+        preamble.append(data[x])
+        preamble.remove(preamble[0])
+        found = False
+        for y in preamble:
+            if (data[x] - y) in preamble:
+                found = True
+        if not found:
+            return data[x]
 
-if __name__ == "__main__":
-    target = 23278925
+def part_two(target):
     numbers = []
     for x in data:
         numbers.append(x)
         while sum(numbers) > target:
             numbers.remove(numbers[0])
         if sum(numbers) == target:
-            print(sum(numbers))
-            print(numbers)
-            print(min(numbers))
-            print(max(numbers))
-            print(min(numbers) + max(numbers))
-            break
+            return min(numbers) + max(numbers)
 
 
-if __name__ == "__pain__":
-    refresh_pre(0)
-    print(preamble)
-    print(data)
-    for x in range(len(data)):
-        found = False
-        refresh_pre(x)
-        print("x", data[x])
-        print("pre", preamble)
-        for y in preamble:
-            print("-", data[x] - y)
-            for z in preamble:
-                print("z", z)
-                if z == (data[x] - y):
-                    print("found", y, "+", (data[x] - y), "=", x)
-                    found = True
-        if not found:
-            print("not found", data[x])
-            sys.exit()
+if __name__ == "__main__":
+    one = part_one()
+    print("Part 1:", one)
+    print("Part 2:", part_two(one))
+
+
