@@ -1,6 +1,5 @@
 inputList = sorted([int(x) for x in open("input/day10.txt").read().split("\n")])
 joltageRating = inputList[-1] + 3
-print(joltageRating)
 
 def part_one():
     one = 0
@@ -39,11 +38,8 @@ def search_for_next(start):
 
 
 def part_two():
-    print(search_for_next(0))
-
-    # for i in list:
-    #     print(i, end=" ")
+    return search_for_next(0)
 
 if __name__ == "__main__":
     print("Part 1:", part_one())
-    part_two()
+    print("Part 2:", part_two())
