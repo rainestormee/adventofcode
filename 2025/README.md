@@ -52,3 +52,8 @@ iterable ranges don't go down lol, that's not a neat trick
 
 also don't do a-b > 0 because that's always true. i guess it makes sense that unsigned ints are always positive but maybe i should have done something better. probably a > b is a cheaper calulation anyway.
 
+# Day 4 Notes
+
+this feels like a familiar problem to solve
+
+part 2 i guess just do it like part 1. i learnt about loop {} i guess. no major roadblocks today
