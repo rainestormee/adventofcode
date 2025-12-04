@@ -1,9 +1,6 @@
-// mod day1;
-mod day2;
+mod day3;
 
 fn main() {
-//     println!("{}", day1::part1("live1.yml"));
-//     println!("{}", day1::part2("live1.yml"));
-    day2::part2();
+    day3::part2();
 }
 
