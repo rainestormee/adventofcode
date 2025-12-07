@@ -1,7 +1,6 @@
-mod day6;
+mod day7;
 
 fn main() {
-    // day6::part1("ilve1.yml");
-    day6::part2("ilve1.yml");
+    day7::part2("live1.yml");
 }
 
