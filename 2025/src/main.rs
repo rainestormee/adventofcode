@@ -1,6 +1,6 @@
-mod day8;
+mod day9;
 
 fn main() {
-    day8::part2("live1.yml");
+    day9::part2("test1.yml");
 }
 
